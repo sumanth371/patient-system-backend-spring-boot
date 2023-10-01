@@ -30,7 +30,7 @@ public class services {
     public Object checkAndgiveDoctordetails(int id){
         HashMap<Integer,Doctor>has=ds.getDoctersMap();
         if(!has.containsKey(id)){
-            return "sorry docter you want is not available in database";
+            return "sorry docter you wanted is not available in database";
         }
         return has.get(id);
     }
